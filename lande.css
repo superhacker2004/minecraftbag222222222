@@ -1,0 +1,171 @@
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* шапка с багом - наезжает на контент */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            /* БАГ 1: неправильное позиционирование - перекрывает контент */
+            height: 80px;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4e9af1;
+            text-shadow: 0 0 10px rgba(78, 154, 241, 0.7);
+        }
+        
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #4e9af1;
+        }
+        
+     
+        .hero {
+            text-align: center;
+            padding: 150px 0 100px;
+            /* БАГ 2: Неправильный отступ из-за фиксированного хедера */
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(78, 154, 241, 0.5);
+        }
+        
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #aaa;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #4e9af1, #6a5af9);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+
+        .info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 60px 0;
+            margin: 60px 0;
+            border-radius: 15px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .info-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .info-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #4e9af1;
+        }
+        
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 80px;
+            /* БАГ 3: Неправильное позиционирование - не прижат к низу */
+        }
+        
+        .server-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4e9af1;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #aaa;
+        }
+        
+    
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 5s ease-in-out infinite;
+        }
+        
+
+        .bug-notice {
+            background: rgba(255, 0, 0, 0.2);
+            border-left: 4px solid red;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }

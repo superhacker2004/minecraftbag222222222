@@ -1,0 +1,80 @@
+
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+     <link rel="stylesheet" href="lande.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZLP Minecraft Server</title>
+<body>
+    <!-- БАГ 1: Фиксированный хедер перекрывает контент -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Zlp</div>
+            <nav>
+                <a href="#">Сервер 1</a>
+                <a href="#">Сервер 2</a>
+                <a href="#">ОУЩИТ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1 class="floating">Лучший сервер по майнкрафту</h1>
+        <p>:) Присоединяйся к нашему сообществу!</p>
+        <a href="#" class="btn">ИГРАТЬ</a>
+        
+        <!-- БАГ 2: Контент перекрыт хедером -->
+        <div class="bug-notice">
+            БАГ: Контент перекрыт фиксированным хедером
+        </div>
+    </section>
+
+    <section class="info container">
+        <h2 style="text-align: center; margin-bottom: 20px;">Почему наш сервер лучший?</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Высокий аптайм</h3>
+                <p>Наш сервер работает 24/7 без перебоев. Стабильность - наш приоритет.</p>
+            </div>
+            <div class="info-card">
+                <h3>Уникальные моды</h3>
+                <p>Только у нас эксклюзивные модификации, которых нет на других серверах.</p>
+            </div>
+            <div class="info-card">
+                <h3>Активное сообщество</h3>
+                <p>Присоединяйся к нашему дружному комьюнити игроков.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="server-stats">
+            <div class="stat">
+                <div class="stat-value">1,500+</div>
+                <div class="stat-label">Игроков онлайн</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">50+</div>
+                <div class="stat-label">Модов</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">99.8%</div>
+                <div class="stat-label">Аптайм</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- БАГ 3: Футер не прижат к низу при малом количестве контента -->
+    <footer>
+        <div class="container">
+            <p>© 2023 ZLP Minecraft Server. Все права защищены.</p>
+            <p>Свяжитесь с нами: admin@zlp-minecraft.ru</p>
+            
+            <div class="bug-notice">
+                БАГ: Футер не прижат к низу страницы
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
